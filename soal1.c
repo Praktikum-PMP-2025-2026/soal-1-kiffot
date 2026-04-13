@@ -13,6 +13,7 @@
  #include <string.h>
 
  void status(int izin, int suhu, int radiasi, int jam){
+    //logic branches
     if (radiasi>=6){
         printf("TOLAK\n");
     }else if (suhu >=390){
@@ -37,11 +38,14 @@
 
  }
  int main() {
+    //initialize variabel
     int izin=0;
     int suhu=0;
     int radiasi=0;
     int jam=0;
+    //scanf untuk menerima output
     scanf("%d %d %d %d", &izin, &suhu, &radiasi, &jam);
+    //memanggil prosedur status untuk cek status
     status(izin, suhu, radiasi, jam);
     }
  
